@@ -1,6 +1,6 @@
 <?php
 ob_start();
-define('API_KEY','XXX:XXX');
+define('API_KEY','321578455:AAEh5RM4_9_TrDTHg51oSJ3ugWSC8qtF23g');
 
 function onyx($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -77,3 +77,4 @@ if(isset($update->callback_query)){
 
 
 file_put_contents('log',ob_get_clean());
+?>
